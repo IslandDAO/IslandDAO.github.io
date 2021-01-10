@@ -6,37 +6,108 @@
 -->
 <html>
 	<head>
-		<title>Island DAO ➡️ BaseX island</title>
+		<title>BaseX island</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="google-site-verification" content="iLxoNR7VdkIXUQSn17FNkpqQHYP99Lyl9sVvD0dKwyU" />
+		<meta name="google-site-verification" content="bbH_iXU1BEIiOgllHQbkr4WPHxS2dWlmfP3g5o_LI98" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	    <meta property="og:title" content="BaseX island"/>
+	    <meta property="og:image" content="https://basexisland.com/preview.jpg"/>
+	    <meta property="og:site_name" content="architecting the new world"/>
+	    <meta property="og:description" content="Island in Estonia • flow-state • exponential technologies • ensuring continuity of the civilisation • realising human potential to heal the planet(s)"/>
+
+	    <meta name="twitter:card" content="summary_large_image">
+	    <meta name="twitter:site" content="@basexisland">
+	    <meta name="twitter:creator" content="@marsXrobertson">
+	    <meta name="twitter:title" content="BaseX island">
+	    <meta name="twitter:description" content="Island in Estonia • flow-state • exponential technologies • ensuring continuity of the civilisation • realising human potential to heal the planet(s)">
+	    <meta name="twitter:image" content="basexisland.com/preview.jpg">
+
+	<!-- Start of Async Drift Code -->
+	<!-- <script>
+	"use strict";
+	
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		t.factory = function(e) {
+		  return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		  };
+		}, t.methods.forEach(function(e) {
+		  t[e] = t.factory(e);
+		}), t.load = function(t) {
+		  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		  var i = document.getElementsByTagName("script")[0];
+		  i.parentNode.insertBefore(o, i);
+		};
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('g27hcedabynw');
+	</script> -->
+	<!-- End of Async Drift Code -->
+
 	</head>
-	<body class="is-preload">
+	<body ng-app="app">
+
+
+		<style>
+			.top-level {
+				position: fixed;
+				top: 0;
+				width: 100%;
+				background: black;
+				color: white;
+				z-index: 1000;
+				padding: 10px 10px 10px 7rem;
+			}
+
+			.top-level a {
+				color: white;
+			}
+
+			@media screen and (max-width: 1680px) {
+				.top-level {
+					padding-left: 5rem;
+				}
+			}
+
+			@media screen and (max-width: 1280px) {
+				.top-level {
+					padding-left: 4rem;
+				}
+			}
+			@media screen and (max-width: 948px) {
+				.top-level {
+					padding-left: 10px;
+					text-align: center;
+				}
+			}
+
+			clearfix:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+
+		</style>
+
+		<!-- <div class="top-level">
+			29-30 August join us for a trip: <a href="/#/trip">basexisland.com/trip</a><br>
+		</div> -->
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1><s>Island DAO</s><br>➡️<br><strong>BaseX island</strong></h1>
-							
-							<p class="major">
-								Visit the new URL: <a href="https://basexisland.com">basexisland.com</a> <br>
-								Read more about the transition: <a href="https://docs.google.com/document/d/1ASS5Q2neSSJJJMxK9Twen1DfaB3KZd2qyAQYrUonhLs/edit?usp=sharing">Google Doc</a>
-							</p>
-
-
-
-
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
-
+				<div ng-view autoscroll="true"></div>
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
@@ -46,11 +117,12 @@
 <!-- 								<li><a href="https://facebook.com/marsrobertson" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://instagram.com/marsrobertson" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="https://linkedin.com/in/marsrobertson" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-								<li><a href="https://github.com/genesisdotre/basexisland.com" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://github.com/basexisland" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
 								<li><a href="https://discord.gg/9RDzBUX" class="icon brands style2 fa-discord"><span class="label">Discord</span></a></li>
-								<li><a href="mailto:email@geneis.re" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://medium.com/@basexisland" class="icon brands style2 fa-medium"><span class="label">Medium</span></a></li>
+								<li><a href="mailto:info@basexisland.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p style="font-size: 0.8em">&copy; Island DAO. Design: <a href="https://html5up.net">HTML5 UP</a>. Hosted: <a href="https://github.com/genesisdotre/basexisland.com">GitHub</a>. Put together: <a href="https://marsxrobertson.com">@marsxrobertson</a></p>
+							<p style="font-size: 0.8em">&copy; BaseX island. Design: <a href="https://html5up.net">HTML5 UP</a>. Hosted: <a href="https://github.com/genesisdotre/basexisland.com">GitHub</a>. Put together: <a href="https://marsrobertson.com">Mars Robertson</a></p>
 						</div>
 					</footer>
 
@@ -65,15 +137,135 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163799365-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+			<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js'></script>
+			<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js'></script>
+			<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
-			  gtag('config', 'UA-163799365-1');
+			<script>
+
+			var app = angular.module("app", ["ngRoute"]);
+
+			app.config(function ($routeProvider) {
+				$routeProvider
+					.when('/', {
+						templateUrl: 'pages/main.html',
+						controller: function($scope) {
+							$scope.team = [
+								{
+									name: "Mars Robertson",
+									image: "mars.jpg",
+									job: "Co-founder<br>Project Lead",
+									link: "https://marsrobertson.com",
+									twitter: "marsXrobertson",
+									linkedin: "marsrobertson/",
+									instagram: "marsrobertson/"
+								},
+								{
+									name: "Joanna Picetti",
+									image: "joanna.jpg",
+									job: "Co-founder<br>Politician, Visionary, Futurist",
+									link: "https://jp.network",
+									twitter: "joannapicetti",
+									linkedin: "joanna-picetti-she-her-hers-12a85010",
+									instagram: "joannapicetti",
+								},
+								{
+									name: "Camille Corti",
+									image: "camille.jpg",
+									job: "Creative Advisor<br>1st Committed Investor",
+									link: "http://blockchainhippy.io",
+									twitter: "blockchainhippy",
+									linkedin: "camille-corti-92268b155",
+									instagram: "camillecorti",
+								},
+								{
+									name: "Gamithra Marga",
+									image: "gamithra.jpg",
+									job: "On a mission<br>to fix the world",
+									link: "http://gamithra.com",
+									twitter: "gamithra_marga",
+									linkedin: "gamithra",
+									instagram: "gamithra",
+								},
+								{
+									name: "Dan Matthews",
+									image: "dan.jpg",
+									job: "Full stack extraordinaire<br>",
+									link: "https://cryptobuilders.io",
+									twitter: "LSDan_DeFi",
+									linkedin: "dandefi",
+									instagram: "",
+								},
+								{
+									name: "Join us",
+									image: "welcome.jpg",
+									job: "Join the <a href='http://basexisland.com/discord'>Discord chat</a><br>" +
+                               			  "Book a call: <a href='https://calendly.com/marsxr/basex'>calendly.com/marsxr/basex</a>",
+									link: "",
+									twitter: "",
+									linkedin: "",
+									instagram: "",
+								}
+							]
+
+							$scope.advisors = [
+								{
+									name: "Marc Winn",
+									image: "marc.jpg",
+									job: "Island Development Advisor<br>Co-founder of <a href='http://dandelion.gg/'>dandellion.gg</a>",
+									link: "https://marcwinn.com",
+									twitter: "marcwinn",
+									linkedin: "marcwinn/",
+									instagram: "marcwinn/"
+								},
+								{
+									name: "Julien Carbonnell",
+									image: "julien.jpg",
+									job: "Smart-City entrepreneur<br>PhD researcher",
+									link: "https://medium.com/@julien.carbonnell",
+									twitter: "Open_Pi",
+									linkedin: "juliencarbonnell",
+									instagram: "julien.carbonnell"
+								}
+
+							]
+
+							$scope.memery = [
+								{
+									name: "Elon Musk",
+									image: "elon.jpg",
+									job: "Chief Meme Officer<br>",
+									link: "https://spacex.com",
+									twitter: "elonmusk",
+									linkedin: "",
+									instagram: "",
+								}
+							]
+
+						}
+					})
+					.when('/bank', {
+						templateUrl: 'pages/bank.html',
+					})
+					.when('/trip', {
+						templateUrl: 'pages/trip.html',
+					})
+					.otherwise('/')
+			});
+
+			app.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
 			</script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170652762-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-170652762-1');
+			</script>
+
 
 
 			<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
