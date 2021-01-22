@@ -160,15 +160,26 @@
 
                         <p>It all started back in April 2020 during the MetaCartel DragonQuest hackathon and <a href="https://estoniadao.org/">Estonia DAO</a>.</p>
 
-                        <p>Now we are in the middle of the most abundant and transformational bull market in the history of humanity - let's channel that monetary energy into something good.</p>
+                        <p>Let's channel the monetary energy into something good.</p>
 
-                        <p><strong>WORK IN PROGRESS</strong></p>
+                        <p><strong>Tokenomics:</strong> Provisional and subject to change.</p>
+                        
+<pre>1,000,000,000 total supply
+17% team, suppliers, contractors, services (during the fundraise)
+17% during the build
+10% reserved for liquidity pools
+40% community crowdfunding
+5% ecosystem development fund
+5% airdrop
+1% Ross Ulbricht legal fund
+5% reserve, contingencies, rainy day
+    </pre>
 
-                        <p>Tokenomics: WIP</p>
+                        <p><strong>Rebrand:</strong> <a href="https://99designs.co.uk/logo-design/contests/logo-island-dao-let-buy-ethereum-blockchain-1055194/entries">99designs</a></p>
 
-                        <p>Rebrand and references to BaseX island: WIP</p>
+                        <p><strong>Smart contract:</strong> <a href="https://github.com/basexisland/assurance-contract">GitHub</a></p>
 
-                        <p>Current status: smart contract work.</p>
+                        <p><strong>Staking UI:</strong> <a href onclick="$('#smartcontract-UI').toggle()">click to reveal</a></p>
                         
                     </div>
 
@@ -176,6 +187,101 @@
                         <img src="images/singularity.jpg" alt="" />
                     </div>
                 </section>
+
+
+             <!-- Five -->
+            <section class="wrapper style1 align-center" id="smartcontract-UI" style="display:none">
+                <div class="inner">
+
+
+                    <div class="container-fluid">
+                        <button type="button" class="btn btn-dark connect" ng-click="enable()">connect metamask</button>
+                        <br>
+                        <br>
+                        
+                        <div class="input-group check ml-auto mr-auto">
+                          <input class="form-control" ng-model="address" placeholder="address"></input>
+                          <button type="button" class="btn btn-dark" ng-click="check()">check</button>
+                        </div>
+                  
+                        <div class="row">
+                          <div class="column">
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Deposit ETH</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Your ETH balance: {{ balance }}</h5>
+                                <div class="input-group">
+                                  <input class="form-control" ng-model="balance" type="number">
+                                  <button type="button" class="btn btn-light" ng-click="deposit()">deposit</button>
+                                </div>  
+                              </div>
+                            </div>
+                  
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Stake ISLAND</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Your ISLAND balance: {{ balanceIsland }}</h5>
+                                <div class="input-group">
+                                  <input class="form-control" ng-model="islandStake" type="number">
+                                  <button type="button" class="btn btn-light" ng-click="stake()">stake</button>
+                                </div>  
+                              </div>
+                            </div>
+                  
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">&nbsp;</div>
+                              <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <div class="input-group">
+                                </div>  
+                              </div>
+                            </div>
+                  
+                          </div>
+                  
+                          <div class="column">
+                            
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">&nbsp;</div>
+                              <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <div class="input-group">
+                                </div>  
+                              </div>
+                            </div>
+                  
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Withdraw ISLAND</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Your ISLAND balance: {{ balanceIsland }}</h5>
+                                <div class="input-group">
+                                  <input class="form-control" ng-model="islandWithdraw" type="number">
+                                  <button type="button" class="btn btn-light" ng-click="withdraw()">withdraw</button>
+                                </div>  
+                              </div>
+                            </div>
+                  
+                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
+                              <div class="card-header">Unstake STAKED</div>
+                              <div class="card-body">
+                                <h5 class="card-title">Your STAKED balance: {{ balanceStaked }}</h5>
+                                <div class="input-group">
+                                  <input class="form-control" ng-model="stakeUnstake" type="number">
+                              <button type="button" class="btn btn-light" ng-click="unstake()">unstake</button>
+                                </div>  
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                  
+                        <p><code>islanddao.eth</code></p>
+                      </div>
+
+
+                </div>
+
+            </section>                
 
 
             <!-- Two -->
@@ -212,6 +318,8 @@
                 <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
                     <div class="content">
                         <h2>Infinite potential</h2>
+
+                        <p>We identified a really cool island in Estonia but owner is a little bit problematic, seeking alternatives, always having options.</p>
 
                         <p>Promo video created by the Estonian investment agency:</p>
 
