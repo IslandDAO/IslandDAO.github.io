@@ -193,86 +193,73 @@
             <section class="wrapper style1 align-center" id="smartcontract-UI" style="display:none">
                 <div class="inner">
 
+<style>
+.column {
+    float: left;
+    width: 400px;
+}
 
-                    <div class="container-fluid">
-                        <button type="button" class="btn btn-dark connect" ng-click="enable()">connect metamask</button>
-                        <br>
-                        <br>
-                        
-                        <div class="input-group check ml-auto mr-auto">
-                          <input class="form-control" ng-model="address" placeholder="address"></input>
-                          <button type="button" class="btn btn-dark" ng-click="check()">check</button>
-                        </div>
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.action {
+    border: 1px solid black;
+    height: 300px;;
+}
+
+</style>
+
+
+                    <div class="row">
+                        <div class="column">
+                          
+                          <div class="action">
+                            <h3>Deposit ETH</h3>
+                            <p>Your ETH balance: {{ balance }}</p>
+                            <input ng-model="balance" type="number">
+                            <button ng-click="deposit()">deposit</button>
+                          </div>
                   
-                        <div class="row">
-                          <div class="column">
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">Deposit ETH</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Your ETH balance: {{ balance }}</h5>
-                                <div class="input-group">
-                                  <input class="form-control" ng-model="balance" type="number">
-                                  <button type="button" class="btn btn-light" ng-click="deposit()">deposit</button>
-                                </div>  
-                              </div>
-                            </div>
                   
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">Stake ISLAND</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Your ISLAND balance: {{ balanceIsland }}</h5>
-                                <div class="input-group">
-                                  <input class="form-control" ng-model="islandStake" type="number">
-                                  <button type="button" class="btn btn-light" ng-click="stake()">stake</button>
-                                </div>  
-                              </div>
-                            </div>
+                          <div class="action">
+                            <h3>Stake ISLAND</h3>
+                            <p>Your ISLAND balance: {{ balanceIsland }}</p>
+                            <input ng-model="islandStake" type="number">
+                            <button ng-click="stake()">stake</button>
+                          </div>
                   
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">&nbsp;</div>
-                              <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="input-group">
-                                </div>  
-                              </div>
-                            </div>
+                          <div class="action">
                   
                           </div>
                   
-                          <div class="column">
-                            
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">&nbsp;</div>
-                              <div class="card-body">
-                                <h5 class="card-title"></h5>
-                                <div class="input-group">
-                                </div>  
-                              </div>
-                            </div>
-                  
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">Withdraw ISLAND</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Your ISLAND balance: {{ balanceIsland }}</h5>
-                                <div class="input-group">
-                                  <input class="form-control" ng-model="islandWithdraw" type="number">
-                                  <button type="button" class="btn btn-light" ng-click="withdraw()">withdraw</button>
-                                </div>  
-                              </div>
-                            </div>
-                  
-                            <div class="card action text-white bg-dark mb-3" style="max-width: 18rem;">
-                              <div class="card-header">Unstake STAKED</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Your STAKED balance: {{ balanceStaked }}</h5>
-                                <div class="input-group">
-                                  <input class="form-control" ng-model="stakeUnstake" type="number">
-                              <button type="button" class="btn btn-light" ng-click="unstake()">unstake</button>
-                                </div>  
-                              </div>
-                            </div>
-                          </div>
                         </div>
+                  
+                        <div class="column">
+                          
+                          <div class="action">
+                  
+                          </div>
+                  
+                          <div class="action">
+                            <h3>Withdraw ISLAND</h3>
+                            <p>Your ISLAND balance: {{ balanceIsland }}</p>
+                            <input ng-model="islandWithdraw" type="number">
+                            <button ng-click="withdraw()">withdraw</button>
+                          </div>
+                      
+                          <div class="action">
+                            <h3>Unstake STAKED</h3>
+                            <p>Your STAKED balance: {{ balanceStaked }}</p>
+                            <input ng-model="stakeUnstake" type="number">
+                            <button ng-click="unstake()">unstake</button>
+                          </div>
+                  
+                        </div>
+                      </div>                  
                   
                   
                         <p><code>islanddao.eth</code></p>
