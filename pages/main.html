@@ -191,79 +191,66 @@
 
              <!-- Five -->
             <section class="wrapper style1 align-center" id="smartcontract-UI" style="display:none">
-                <div class="inner">
+                <div class="inner" style="text-align: left;">
 
-<style>
-.column {
-    float: left;
-    width: 400px;
-}
+                    <style>
+                    .column {
+                        float: left;
+                        width: 400px;
+                    }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+                    /* Clear floats after the columns */
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
 
-.action {
-    border: 1px solid black;
-    height: 300px;;
-}
+                    .action {
+                        border: 1px solid black;
+                        height: 300px;;
+                    }
 
-</style>
+                    .crypto-button {
+                        border-radius: 0;
+                    }
+
+                    </style>
+
+
+
+                    <div>
+                        <button ng-click="enable()" class="crypto-button">connect metamask</button>
+                        <div>{{address}}&nbsp;</div>
+                        <!-- <input ng-model="address" placeholder="address" type="text"></input> -->
+                    </div>
 
 
                     <div class="row">
                         <div class="column">
-                          
+
                           <div class="action">
                             <h3>Deposit ETH</h3>
                             <p>Your ETH balance: {{ balance }}</p>
-                            <input ng-model="balance" type="number">
-                            <button ng-click="deposit()">deposit</button>
+                            <input ng-model="balance" type="text">
+                            <button ng-click="deposit()" class="crypto-button">deposit</button>
                           </div>
-                  
-                  
-                          <div class="action">
-                            <h3>Stake ISLAND</h3>
-                            <p>Your ISLAND balance: {{ balanceIsland }}</p>
-                            <input ng-model="islandStake" type="number">
-                            <button ng-click="stake()">stake</button>
-                          </div>
-                  
-                          <div class="action">
-                  
-                          </div>
-                  
+
                         </div>
                   
                         <div class="column">
-                          
-                          <div class="action">
-                  
-                          </div>
-                  
+                
                           <div class="action">
                             <h3>Withdraw ISLAND</h3>
                             <p>Your ISLAND balance: {{ balanceIsland }}</p>
-                            <input ng-model="islandWithdraw" type="number">
-                            <button ng-click="withdraw()">withdraw</button>
+                            <input ng-model="islandWithdraw" type="text">
+                            <button ng-click="withdraw()" class="crypto-button">withdraw</button>
                           </div>
                       
-                          <div class="action">
-                            <h3>Unstake STAKED</h3>
-                            <p>Your STAKED balance: {{ balanceStaked }}</p>
-                            <input ng-model="stakeUnstake" type="number">
-                            <button ng-click="unstake()">unstake</button>
-                          </div>
-                  
                         </div>
-                      </div>                  
                   
-                  
-                        <p><code>islanddao.eth</code></p>
-                      </div>
+
+                    </div>
 
 
                 </div>
