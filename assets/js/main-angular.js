@@ -71,4 +71,5 @@ async function init() {
 
 }
 
-init();
+// NO IN PROD
+// init();
