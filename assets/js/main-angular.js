@@ -11,23 +11,32 @@ app.config(function ($routeProvider) {
                 $scope.memery = MEMERY;
 
                 $scope.enable = async function() {
-                    await window.ethereum.enable();
+                    console.log("ENABLE ETHEREUM");
 
-
-
-
-                    // provider = await new ethers.providers.Web3Provider(window.ethereum)
-                    // signer = await provider.getSigner();
-                    // $scope.address = (await provider.listAccounts())[0];
+                    await window.ethereum.enable()
+                    provider = new ethers.providers.Web3Provider(window.ethereum);
+                    signer = provider.getSigner();
                 
-                    // assurance = await new ethers.Contract(AssuranceAddress, AssuranceABI, signer);
-                    // island    = await new ethers.Contract(IslandAddress,    IslandABI,    signer);
+                    address = await signer.getAddress()
+                
+                
+                    balance = await provider.getBalance(address);
+                
+                    console.log(ethers.utils.formatEther(balance.toString()));
+
+
+
+                
+                    assurance = await new ethers.Contract(AssuranceAddress, AssuranceABI, signer);
+                    island    = await new ethers.Contract(IslandAddress,    IslandABI,    signer);
             
-                    // let balance = await provider.getBalance($scope.address)
-                    // let balanceIsland = await island.balanceOf($scope.address);
-                    // let allowanceIsland = await island.allowance($scope.address, AssuranceAddress);
+                    let balanceIsland = await island.balanceOf(address);
+                    console.log(balanceIsland.toString());
+
+
+
+                    // let allowanceIsland = await island.allowance(address, AssuranceAddress);
                     
-                    // console.log(balance, balanceIsland.toString(),  allowanceIsland.toString());
             
                     // $scope.balance = ethers.utils.formatEther(balance.toString());
                     // $scope.balanceIsland = ethers.utils.formatEther(balanceIsland.toString());
@@ -51,25 +60,3 @@ app.config(function ($routeProvider) {
 });
 
 app.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
-
-async function init() {
-
-    // let provider = new ethers.providers.InfuraProvider('ropsten');
-
-    await window.ethereum.enable();
-    provider = new ethers.providers.Web3Provider(window.ethereum);
-    signer = provider.getSigner();
-    account = (await provider.listAccounts())[0]
-
-
-    provider.getBalance(account).then((balance) => {
-        let etherString = ethers.utils.formatEther(balance);
-        console.log("Balance: " + etherString);
-    });
-
-
-
-}
-
-// NO IN PROD
-// init();
