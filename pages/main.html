@@ -85,11 +85,13 @@
 
                                 Research Centre. Innovation Hub.<br><br>
 
-                                Rocket Science. Alien Technology.<br><br>
+                                Climate Change Adaptation.<br><br>
 
-                                Blockchain. AI. Psychedelics.<br><br>
+                                Regenerative Civilisation.<br><br>
 
-                                Convergence of Exponentials.
+                                AI. Blockchain. Governance.  <br><br>
+
+                                Exponential Technologies.<br><br>
 
                                 <!-- Regenerative research centre.<br><br> -->
 
@@ -179,7 +181,7 @@
     </pre>
 
 
-                        <p><strong>ENS domain:</strong> <code>islanddao.org</code></p>
+                        <p><strong>ENS domain:</strong> <code>islanddao.eth</code></p>
 
                         <p><strong>Rebrand:</strong> <a href="https://99designs.co.uk/logo-design/contests/logo-island-dao-let-buy-ethereum-blockchain-1055194/entries">DONE</a></p>
 
@@ -196,10 +198,15 @@
 
 
              <!-- Five -->
-            <section class="wrapper style1 align-center" id="smartcontract-UI" style="display:none">
+            <section class="wrapper style1 align-center crypto-ui" id="smartcontract-UI" style="display:none">
                 <div class="inner" style="text-align: left;">
 
                     <style>
+
+                    .crypto-ui h3 {
+                        font-size: 1em;
+                    }
+
                     .column {
                         float: left;
                         width: 400px;
@@ -226,6 +233,8 @@
 
 
                     <div>
+                        <h1 ng-show="metamaskError">{{ metamaskError }}</h1>
+
                         <button ng-click="enable()" class="crypto-button">connect metamask</button>
                         <div>{{address}}&nbsp;</div>
                         <!-- <input ng-model="address" placeholder="address" type="text"></input> -->
@@ -236,8 +245,8 @@
                         <div class="column">
 
                           <div class="action">
-                            <h3>Deposit ETH</h3>
-                            <p>Your ETH balance: {{ balance }}</p>
+                            <h3>Deposit ETH to receive ISLAND</h3>
+                            <p>Your ETH balance: {{ balanceETH }}</p>
                             <input ng-model="balance" type="text">
                             <button ng-click="deposit()" class="crypto-button">deposit</button>
                           </div>
@@ -247,15 +256,39 @@
                         <div class="column">
                 
                           <div class="action">
-                            <h3>Withdraw ISLAND</h3>
-                            <p>Your ISLAND balance: {{ balanceIsland }}</p>
+                            <h3>Withdraw ISLAND to receive ETH</h3>
+                            <p>Your staked ETH balance: {{ balanceISLAND }}</p>
                             <input ng-model="islandWithdraw" type="text">
                             <button ng-click="withdraw()" class="crypto-button">withdraw</button>
                           </div>
                       
                         </div>
                   
+                    </div>
 
+                    <div class="row">
+                        <div class="column">
+
+                          <div class="action">
+                            <h3>Stake ISLAND to receive STAKED</h3>
+                            <p>Your ISLAND balance: {{ balance }}</p>
+                            <input ng-model="balance" type="text">
+                            <button ng-click="deposit()" class="crypto-button">deposit</button>
+                          </div>
+
+                        </div>
+                  
+                        <div class="column">
+                
+                          <div class="action">
+                            <h3>Unstake STAKED to receive ISLAND</h3>
+                            <p>Your staked ETH balance: {{ balanceIsland }}</p>
+                            <input ng-model="islandWithdraw" type="text">
+                            <button ng-click="withdraw()" class="crypto-button">withdraw</button>
+                          </div>
+                      
+                        </div>
+                  
                     </div>
 
 
