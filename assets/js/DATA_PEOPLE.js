@@ -2,7 +2,7 @@ TEAM = [
     {
         name: "Mars Robertson",
         image: "mars.jpg",
-        job: "Co-creator<br>Project Lead",
+        job: "Co-founder<br>Project Lead",
         link: "https://marsrobertson.com",
         twitter: "marsXrobertson",
         linkedin: "marsrobertson/",
@@ -11,7 +11,7 @@ TEAM = [
     {
         name: "Joanna Picetti",
         image: "joanna.jpg",
-        job: "Chica Problematica<br>Politician, Visionary, Futurist",
+        job: "Co-founder<br>Politician, Visionary, Futurist",
         link: "https://jp.network",
         twitter: "joannapicetti",
         linkedin: "joanna-picetti-she-her-hers-12a85010",
