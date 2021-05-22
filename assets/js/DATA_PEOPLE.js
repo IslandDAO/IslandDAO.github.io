@@ -69,7 +69,7 @@ ADVISORS = [
     {
         name: "Julien Carbonnell",
         image: "julien.jpg",
-        job: "Smart-City entrepreneur<br>PhD researcher",
+        job: "Smart-City and Civic-Tech<br>PhD in urban science",
         link: "https://medium.com/@julien.carbonnell",
         twitter: "Open_Pi",
         linkedin: "juliencarbonnell",
