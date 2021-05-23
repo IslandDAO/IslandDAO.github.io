@@ -70,7 +70,7 @@ ADVISORS = [
         name: "Julien Carbonnell",
         image: "julien.jpg",
         job: "Smart-City and Civic-Tech<br>PhD in urban science",
-        link: "https://juliencarbonnell.medium.com/",
+        link: "https://juliencarbonnell.medium.com",
         twitter: "Open_Pi",
         linkedin: "juliencarbonnell",
         instagram: "julien.carbonnell"
