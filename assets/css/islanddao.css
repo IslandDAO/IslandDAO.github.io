@@ -5,6 +5,12 @@
     .coverMiddle {
       display: none;
     }
+    .island-text {
+      display: none;
+    }
+    h1 {
+      display: none;
+    }
   }
 
 
